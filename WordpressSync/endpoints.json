@@ -1,0 +1,28 @@
+{
+  "$schema": "./endpoints.schema.json",
+  "meta": {
+    "title": "endpoints config file",
+    "description": "endpoints config file"
+  },
+  "data": {
+    "projects": [
+      {
+        "name": "digital.ca.gov",
+        "description": "digital.ca.gov website",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://live-digital-ca-gov.pantheonsite.io",
+          "tags_exclude": ["Preview-Mode"]
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "digital.ca.gov",
+          "Branch": "main",
+          "ConfigPath": "wordpress/wordpress-to-github.config.json"
+        }
+      }
+    ]
+  }
+}
