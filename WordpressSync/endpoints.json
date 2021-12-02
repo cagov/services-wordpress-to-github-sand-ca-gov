@@ -7,55 +7,23 @@
   "data": {
     "projects": [
       {
-        "name": "drought.ca.gov",
-        "description": "Drought production website",
+        "name": "sand.ca.gov",
+        "description": "Sandbox",
         "enabled": true,
-        "enabledLocal": false,
+        "enabledLocal": true,
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
-          "url": "https://live-drought-ca-gov.pantheonsite.io",
-          "tags_exclude": ["staging", "development"]
+          "url": "https://dev-sand-ca-gov.pantheonsite.io/",
+          "tags_exclude": []
         },
         "GitHubTarget": {
           "Owner": "cagov",
-          "Repo": "drought.ca.gov",
+          "Repo": "odi-publishing-11ty-sandbox",
           "Branch": "main",
-          "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
-        }
-      },
-      {
-        "name": "staging.drought.ca.gov",
-        "description": "Drought STAGING website",
-        "enabled": true,
-        "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
-        "WordPressSource": {
-          "url": "https://live-drought-ca-gov.pantheonsite.io",
-          "tags_exclude": ["development"]
-        },
-        "GitHubTarget": {
-          "Owner": "cagov",
-          "Repo": "drought.ca.gov",
-          "Branch": "staging",
-          "ConfigPath": "wordpress/wordpress-to-github.config.json"
-        }
-      },
-      {
-        "name": "main-test-pantheon.drought.ca.gov",
-        "enabled": true,
-        "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
-        "WordPressSource": {
-          "url": "https://test-drought-ca-gov.pantheonsite.io",
-          "tags_exclude": ["staging", "development"]
-        },
-        "GitHubTarget": {
-          "Owner": "cagov",
-          "Repo": "drought.ca.gov",
-          "Branch": "main-test-pantheon",
-          "ConfigPath": "wordpress/wordpress-to-github.config.json"
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
         }
       }
+      
     ]
   }
 }
